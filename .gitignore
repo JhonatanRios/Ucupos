@@ -3,3 +3,5 @@
 package-lock.json
 public/assets/dist/*
 !public/assets/dist/.gitkeep
+**/*.map
+**/*.css
