@@ -1,5 +1,5 @@
 import * as React from 'react';
-
+import { Link } from "react-router-dom";
 import './Header.scss';
 
 interface HeaderProps {
@@ -20,9 +20,15 @@ export const Header = ({ title, text, img }: HeaderProps) => {
             </div>
 
             <div className="enlaces" id="enlaces">
-                <a className="publicar hvr-underline-from-left" href="/">Publicar</a>
-                <a className="cupos hvr-underline-from-left" href="/">Cupos</a>
-                <a className="historial hvr-underline-from-left" href="/">Historial</a>
+                <Link to='/publicar' className="public hvr-underline-from-left">
+                    Publicar
+                </Link>
+                <Link to='/admin' className="cupos hvr-underline-from-left">
+                    Cupos
+                </Link>
+                <Link to='/historial' className="historial hvr-underline-from-left">
+                    Historial
+                </Link>
             </div>
 
             <div className="enlaces salir" id="salir">
