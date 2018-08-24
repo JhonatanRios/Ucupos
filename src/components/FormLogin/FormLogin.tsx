@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from "react-router-dom";
 
 import './FormLogin.scss';
 
@@ -19,20 +20,18 @@ export const FormLogin = ({ title, text, img }: FormLoginProps) => {
                             <div className="logoCont">
                                 <img src="" alt="Logo Cupos ICESI" className="logo" />
                             </div>
-
                             <h1>Te damos la bienvenida</h1>
                             <ul>
                                 <li>Comparte tu vehiculo desde y hacia la universidad</li>
                                 <li>Busca cupos al instante</li>
                                 <li>Más fácil, rápido, comodo y seguro</li>
                             </ul>
-
                         </div>
                     </div>
                 </div>
                 <div className="form">
                     <h1 className="titleform">
-                        <span>Login</span> / Sign Up</h1>
+                        <span>Login</span></h1>
                     <form action="#" className="custom-form">
                         <div className="form-group" ng-class="{'not-empty': userName.length}">
                             <input type="text" className="form-control" name="user" id="user" ng-model="userName" />
@@ -44,13 +43,17 @@ export const FormLogin = ({ title, text, img }: FormLoginProps) => {
                         </div>
                         <div className="contSubmit">
                             <div className="submit">
-                                <button className="btn btn-primary btn-block" disabled>Ingresar</button>
+                                <button className="btn btn-primary btn-block" >Ingresar</button>
                             </div>
-                            <h2 className="textLoginWith">Or login with</h2>
-                            <img src="" alt="Facebook" className="logoFb" />
-                            <img src="" alt="Google" className="logoGoogle" />
                         </div>
                     </form>
+                </div>
+                <div className="noCuenta">
+                    <Link to='/regist' className="public textNoCuenta">
+                        No tienes una <span>cuenta?</span>
+                    </Link>
+                    <span className="separador"> / </span>
+                    <a href="#" className="textPerdisteContrasena">Perdiste tu <span>contraseña?</span></a>
                 </div>
             </section>
         </section >
