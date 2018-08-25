@@ -32,7 +32,9 @@ export const Header = ({ title, text, img }: HeaderProps) => {
             </div>
 
             <div className="enlaces salir" id="salir">
-                <a className="logOut" href="/">LogOut</a>
+                <Link to='/' className="historial hvr-pop">
+                    LogOut
+                </Link>
             </div>
         </nav>
     </header>;

@@ -1,37 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+@import '../../../public/assets/css/General.scss';
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-//Fuentes
-$fuente: 'Roboto', sans-serif;
-
-//Colors
-//Reference Color https://material.io/tools/color/#!/?view.left=0&view.right=0&secondary.color=F44336&primary.color=1E88E5
-
-$negro: #000000;
-$blanco: #fff;
-$blanco2: rgba(255, 255, 255, 0.7);
-$primary: #1e88e5;
-$primaryLight: #6ab7ff;
-$primaryDark: #005cb2;
-$secundary: #f44336;
-$secundaryLight: #ff9885;
-$secundaryDark: #f34b56;
-$secundaryDark2: #ee061676;
-$lightGray: rgb(200, 200, 200);
-$darkGray: rgb(120, 120, 120);
-$textDark: #000;
-$textLight: #fff;
-
-.body {
-    
+.login {
     background: rgba($color: #010d90, $alpha: 0.3);
-    //mix-blend-mode: hard-light;
-
     width: 100%;
     height: 100vh;
     display: flex;
@@ -41,7 +11,6 @@ $textLight: #fff;
     align-content: center;
     align-items: center;
     .loginPadre {
-    
         width: 60%;
         height: 80vh;
         .title {
@@ -60,7 +29,6 @@ $textLight: #fff;
             }
         }
         .loginForm {
-            
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
@@ -69,11 +37,11 @@ $textLight: #fff;
             align-items: center;
             .intro {
                 display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            justify-content: center;
-            align-content: center;
-            align-items: center;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
                 background: $secundaryDark2;
                 width: 50%;
                 height: 400px;
@@ -88,9 +56,6 @@ $textLight: #fff;
                     justify-content: space-around;
                     align-content: center;
                     align-items: center;
-                    .logo {
-
-                    }
                 }
                 h1 {
                     font-family: $fuente;
@@ -115,11 +80,11 @@ $textLight: #fff;
                 height: 400px;
                 border-radius: 0 30px 30px 0;
                 display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            justify-content: center;
-            align-content: center;
-            align-items: center;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
                 .titleform {
                     padding-bottom: 8%;
                     color: $darkGray;
@@ -136,10 +101,7 @@ $textLight: #fff;
                     font-weight: 400;
                     font-size: 16px;
                     width: 80%;
-                   // margin: 40px auto 40px; // background: #fff;
-                    //padding: 40px;
                     border-radius: 4px;
-                    
                     .form-group {
                         position: relative;
                         padding-top: 16px;
@@ -203,7 +165,7 @@ $textLight: #fff;
                         }
                     }
                 }
-                .contSubmit{
+                .contSubmit {
                     padding-top: 8%;
                     display: flex;
                     flex-direction: row;
@@ -213,26 +175,23 @@ $textLight: #fff;
                     align-items: center;
                     .btn-primary {
                         background-color: rgba(0, 0, 0, 0);
-                         border-color: $secundaryDark;
-                         padding: 5%;
-                         width: 120px;
-                         border-radius: 40px;
-                         color: $textDark;
-                         margin: 5%;
-                     }
+                        border-color: $secundaryDark;
+                        padding: 5%;
+                        width: 120px;
+                        border-radius: 40px;
+                        color: $textDark;
+                        margin: 5%;
+                    }
                     .textLoginWith {
                         font-family: $fuente;
                         font-size: 0.8em;
                         font-weight: 300;
                     }
-                    img {
-
-                    }
                 }
-              
             }
         }
         .noCuenta {
+            margin-top: 1em;
             font-family: $fuente;
             color: $textLight;
             display: flex;
@@ -241,15 +200,12 @@ $textLight: #fff;
             justify-content: center;
             align-content: center;
             align-items: center;
-
-            
             .textNoCuenta {
                 color: $textLight;
                 font-weight: 300;
                 font-size: 1em;
-                text-decoration:none; 
-
-                span{
+                text-decoration: none;
+                span {
                     font-weight: 700;
                 }
             }
@@ -259,17 +215,17 @@ $textLight: #fff;
             .textNoCuenta:hover {
                 color: $secundary;
             }
-             .separador{
+            .separador {
                 font-weight: 300;
                 font-size: 1.2em;
                 padding: 1% 2%;
-             }
+            }
             .textPerdisteContrasena {
                 font-weight: 300;
                 font-size: 1em;
-                text-decoration:none; 
+                text-decoration: none;
                 color: $textLight;
-                span{
+                span {
                     font-weight: 700;
                 }
             }

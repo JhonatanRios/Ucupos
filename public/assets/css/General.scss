@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900');
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+//Fuentes
+$fuente: 'Roboto',
+sans-serif;
+$fuenteD: 'Lato',
+sans-serif;
+//Colors
+//Reference Color https://material.io/tools/color/#!/?view.left=0&view.right=0&secondary.color=F44336&primary.color=1E88E5
+$blanco: #fff;
+$textLight: #fff;
+$white: #FFF;
+
+$model: #fcf4e8;
+
+$blue: #3e8edd;
+$primary: #1e88e5;
+$primaryLight: #6ab7ff;
+$primaryDark: #005cb2;
+
+$slide: #efd2ca;
+$secundary: #f44336;
+$secundaryLight: #ff9885;
+$secundaryDark: #f34b56;
+$secundaryDark2: #ee061676;
+$red: #ff0000;
+$rose: #EF6F7F;
+
+$blanco2: rgba(255,
+255,
+255,
+0.7);
+$lightGray: rgb(200,
+200,
+200);
+$darkGray: rgb(120,
+120,
+120);
+$textDark: #000;
+$black: #000;
+$negro: #000000;

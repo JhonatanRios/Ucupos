@@ -1,0 +1,55 @@
+.admin {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    .derecha {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 50%;
+        height: 100vh;
+        .list {
+            background: red;
+            width: 100%;
+            height: 30vh;
+            padding: 1em;
+        }
+        .desc {
+            background: blue;
+            width: 100%;
+            height: 60vh;
+            padding: 1em;
+        }
+    }
+    .izquierda {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        background: #021540;
+        width: 50%;
+        height: 100vh;
+        .busc {
+            background: blue;
+            width: 100%;
+            height: 50vh;
+            padding: 1em;
+        }
+        .map {
+            background: red;
+            width: 100%;
+            height: 50vh;
+            padding: 1em;
+        }
+    }
+}

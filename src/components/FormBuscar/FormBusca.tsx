@@ -1,17 +1,17 @@
 import * as React from 'react';
 
-import './Map.scss';
+import './FormBusca.scss';
 
-interface MapProps {
+interface FormBuscaProps {
     title: string;
     text?: string;
     img?: string;
 }
 
-export const Map = ({ title, text, img }: MapProps) => {
+export const FormBusca = ({ title, text, img }: FormBuscaProps) => {
     return (
         <section className="">
-            <section className="mapPadre">
+            <section className="buscarPadre">
 
             </section>
         </section >
