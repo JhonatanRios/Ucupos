@@ -10,8 +10,20 @@ interface FormPublicProps {
 
 export const FormPublic = ({ title, text, img }: FormPublicProps) => {
     return (
-        <section className="public">
-            <h1>Publicar</h1>
+        <section className="publica">
+            <section className="publicPadre">
+                <div className="title">
+                    <h1>Publica Tu Ruta</h1>
+                </div>
+                <div className="publicForm">
+                    <div className="foto">
+
+                    </div>
+                    <div className="des">
+
+                    </div>
+                </div>
+            </section >
         </section >
     );
 }

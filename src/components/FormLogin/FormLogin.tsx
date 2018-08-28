@@ -4,12 +4,15 @@ import { Link } from "react-router-dom";
 import './FormLogin.scss';
 
 interface FormLoginProps {
-    title: string;
-    text?: string;
-    img?: string;
+    email: string;
+    password: string;
+    login: any;
+    handleChangeEmail: any;
+    handleChangePassword: any;
+    errorLogged: boolean;
 }
 
-export const FormLogin = ({ title, text, img }: FormLoginProps) => {
+export const FormLogin = (props: FormLoginProps) => {
     return (
         <section className="login">
             <section className="loginPadre">
@@ -31,21 +34,26 @@ export const FormLogin = ({ title, text, img }: FormLoginProps) => {
                     <div className="form">
                         <h1 className="titleform">
                             <span>Login</span></h1>
-                        <form action="#" className="custom-form">
-                            <div className="form-group" ng-class="{'not-empty': userName.length}">
-                                <input type="text" className="form-control" name="user" id="user" ng-model="userName" />
+                        <form className="custom-form" onSubmit={props.login}>
+                            <div className="form-group">
+                                <input type="email" className="form-control" value={props.email} onChange={props.handleChangeEmail} />
                                 <label className="animated-label">Correo</label>
                             </div>
-                            <div className="form-group" ng-class="{'not-empty': passWord.length}">
-                                <input type="password" className="form-control" name="pass" id="pass" ng-model="passWord" />
+                            <div className="form-group">
+                                <input type="password" className="form-control" value={props.password} onChange={props.handleChangePassword} />
                                 <label className="animated-label">Contraseña</label>
                             </div>
                             <div className="contSubmit">
                                 <div className="submit">
-                                    <button className="btn btn-primary btn-block" >Ingresar</button>
+                                    <button className="btn btn-primary btn-block" id="regis" type="submit">Ingresar</button>
                                 </div>
                             </div>
                         </form>
+                        {!props.errorLogged &&
+                            <div>
+                                <h2>Las Credenciales no son Correctas</h2>
+                            </div>
+                        }
                     </div>
                 </div>
                 <div className="noCuenta">

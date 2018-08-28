@@ -10,8 +10,17 @@ interface ListHistoProps {
 
 export const ListHisto = ({ title, text, img }: ListHistoProps) => {
     return (
-        <section className="histo">
-                <h1>Historial</h1>
+        <section className="hist">
+            <section className="histPadre">
+                <div className="title">
+                    <h1>Rutas Historicas</h1>
+                </div>
+                <div className="histForm">
+                    <div className="lista">
+
+                    </div>
+                </div>
+            </section >
         </section >
     );
 }

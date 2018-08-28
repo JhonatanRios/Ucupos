@@ -220,21 +220,6 @@
                 font-size: 1.2em;
                 padding: 1% 2%;
             }
-            .textPerdisteContrasena {
-                font-weight: 300;
-                font-size: 1em;
-                text-decoration: none;
-                color: $textLight;
-                span {
-                    font-weight: 700;
-                }
-            }
-            .textPerdisteContrasena:visited {
-                color: $textLight;
-            }
-            .textPerdisteContrasena:hover {
-                color: $secundary;
-            }
         }
     }
 }

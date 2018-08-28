@@ -8,9 +8,9 @@ interface MapProps {
     img?: string;
 }
 
-export const Map = ({ title, text, img }: MapProps) => {
+export const Map = (props: MapProps) => {
     return (
-        <section className="">
+        <section className="mapi">
             <section className="mapPadre">
 
             </section>
