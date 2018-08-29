@@ -1,6 +1,7 @@
 import * as React from 'react';
 
 import './Footer.scss';
+// import './../../../node_modules/font-awesome/scss/font-awesome.scss';
 
 interface FooterProps {
     img?: string;

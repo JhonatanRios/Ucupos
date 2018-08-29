@@ -36,11 +36,11 @@ export const FormLogin = (props: FormLoginProps) => {
                             <span>Login</span></h1>
                         <form className="custom-form" onSubmit={props.login}>
                             <div className="form-group">
-                                <input type="email" className="form-control" value={props.email} onChange={props.handleChangeEmail} />
+                                <input type="emaily" className="form-control" value={props.email} onChange={props.handleChangeEmail} />
                                 <label className="animated-label">Correo</label>
                             </div>
                             <div className="form-group">
-                                <input type="password" className="form-control" value={props.password} onChange={props.handleChangePassword} />
+                                <input type="pass" className="form-control" value={props.password} onChange={props.handleChangePassword} />
                                 <label className="animated-label">Contraseña</label>
                             </div>
                             <div className="contSubmit">
@@ -62,6 +62,6 @@ export const FormLogin = (props: FormLoginProps) => {
                     </Link>
                 </div>
             </section>
-        </section >
+        </section>
     );
 }

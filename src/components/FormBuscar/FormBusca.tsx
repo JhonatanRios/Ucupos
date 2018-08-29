@@ -10,10 +10,15 @@ interface FormBuscaProps {
 
 export const FormBusca = ({ title, text, img }: FormBuscaProps) => {
     return (
-        <section className="">
+        <section className="bus">
             <section className="buscarPadre">
+            <div className="title">
+                    <h1>Encuentra tu Ruta</h1>
+                </div>
+                <div className="buscarForm">
 
+                </div>
             </section>
-        </section >
+        </section>
     );
 }

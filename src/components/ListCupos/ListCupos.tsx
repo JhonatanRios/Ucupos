@@ -21,6 +21,6 @@ export const ListCupos = ({ title, text, img }: ListCuposProps) => {
                     </div>
                 </div>
             </section>
-        </section >
+        </section>
     );
 }

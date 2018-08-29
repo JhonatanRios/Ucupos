@@ -11,28 +11,30 @@ export class Admin extends React.Component {
     render() {
         return (
             <section className="admin">
-                <section className="derecha">
-                    <div className="list">
-                        <ListCupos title="Listado de Cupos"
-                            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ducimus similique incidunt, nostrum placeat, ipsa mollitia, perspiciatis eveniet sed doloremque itaque. Dolorum deserunt maiores vitae molestiae sint iste sed deleniti?"
-                            img="./assets/img/logo.png" />
+                <section className="adminPadre">
+                    <div className="izquierda">
+                        <div className="buscCupo">
+                            <FormBusca title="Buscador"
+                                text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ducimus similique incidunt, nostrum placeat, ipsa mollitia, perspiciatis eveniet sed doloremque itaque. Dolorum deserunt maiores vitae molestiae sint iste sed deleniti?"
+                                img="./assets/img/logo.png" />
+                        </div>
+                        <div className="mapCupo">
+                            <Map title="Mapa"
+                                text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ducimus similique incidunt, nostrum placeat, ipsa mollitia, perspiciatis eveniet sed doloremque itaque. Dolorum deserunt maiores vitae molestiae sint iste sed deleniti?"
+                                img="./assets/img/logo.png" />
+                        </div>
                     </div>
-                    <div className="desc">
-                        <Descrip title="Decripción"
-                            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ducimus similique incidunt, nostrum placeat, ipsa mollitia, perspiciatis eveniet sed doloremque itaque. Dolorum deserunt maiores vitae molestiae sint iste sed deleniti?"
-                            img="./assets/img/logo.png" />
-                    </div>
-                </section>
-                <section className="izquierda">
-                    <div className="busc">
-                        <FormBusca title="Buscador"
-                            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ducimus similique incidunt, nostrum placeat, ipsa mollitia, perspiciatis eveniet sed doloremque itaque. Dolorum deserunt maiores vitae molestiae sint iste sed deleniti?"
-                            img="./assets/img/logo.png" />
-                    </div>
-                    <div className="map">
-                        <Map title="Mapa"
-                            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ducimus similique incidunt, nostrum placeat, ipsa mollitia, perspiciatis eveniet sed doloremque itaque. Dolorum deserunt maiores vitae molestiae sint iste sed deleniti?"
-                            img="./assets/img/logo.png" />
+                    <div className="derecha">
+                        <div className="lisCupo">
+                            <ListCupos title="Listado de Cupos"
+                                text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ducimus similique incidunt, nostrum placeat, ipsa mollitia, perspiciatis eveniet sed doloremque itaque. Dolorum deserunt maiores vitae molestiae sint iste sed deleniti?"
+                                img="./assets/img/logo.png" />
+                        </div>
+                        <div className="descCupo">
+                            <Descrip title="Decripción"
+                                text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ducimus similique incidunt, nostrum placeat, ipsa mollitia, perspiciatis eveniet sed doloremque itaque. Dolorum deserunt maiores vitae molestiae sint iste sed deleniti?"
+                                img="./assets/img/logo.png" />
+                        </div>
                     </div>
                 </section>
             </section>

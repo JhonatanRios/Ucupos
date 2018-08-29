@@ -1,11 +1,8 @@
 import * as React from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import { FormRegis } from '../../components/FormRegis/FormRegis';
-import { Admin } from '../Admin/Admin';
 
 interface Props {
-
 }
 
 interface State {
@@ -34,9 +31,7 @@ export class Registro extends React.Component<Props, State>{
         localStorage.setItem('email', this.state.email);
         localStorage.setItem('password', this.state.password);
         /*------------------*/
-        <Router>
-            <Route path="/admin" component={Admin} />
-        </Router>
+        
     }
 
     render() {

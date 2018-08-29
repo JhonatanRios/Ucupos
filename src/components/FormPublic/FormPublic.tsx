@@ -23,7 +23,7 @@ export const FormPublic = ({ title, text, img }: FormPublicProps) => {
 
                     </div>
                 </div>
-            </section >
-        </section >
+            </section>
+        </section>
     );
 }

@@ -19,6 +19,7 @@
     "@types/react-router-dom": "^4.3.0",
     "connect-history-api-fallback": "^1.5.0",
     "core-js": "^2.5.7",
+    "font-awesome": "^4.7.0",
     "install": "^0.12.1",
     "koa-connect": "^2.0.1",
     "npm": "^6.4.0",

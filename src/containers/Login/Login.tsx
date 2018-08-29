@@ -3,7 +3,6 @@ import * as React from 'react';
 import { FormLogin } from '../../components/FormLogin/FormLogin';
 
 interface Props {
-
 }
 
 interface State {
@@ -35,7 +34,7 @@ export class Login extends React.Component<Props, State>{
         const password = localStorage.getItem('password');
         /*----------*/
         if (this.state.email === email && this.state.password === password) {
-            console.log("holi");
+            
         }
         this.setState({
             errorLogged:true

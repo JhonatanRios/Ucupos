@@ -12,8 +12,10 @@ export const Map = (props: MapProps) => {
     return (
         <section className="mapi">
             <section className="mapPadre">
-
+                <div className="title">
+                    <h1>Ruta</h1>
+                </div>
             </section>
-        </section >
+        </section>
     );
 }

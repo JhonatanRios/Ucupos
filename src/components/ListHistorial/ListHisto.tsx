@@ -20,7 +20,7 @@ export const ListHisto = ({ title, text, img }: ListHistoProps) => {
 
                     </div>
                 </div>
-            </section >
-        </section >
+            </section>
+        </section>
     );
 }

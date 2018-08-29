@@ -50,6 +50,6 @@ export const FormRegis = (props: FormRegisProps) => {
                     </div>
                 </div>
             </section>
-        </section >
+        </section>
     );
 }
