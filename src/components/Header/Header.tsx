@@ -22,19 +22,19 @@ export const Header = ({ title, text, img }: HeaderProps) => {
                 <div className="enlaces" id="enlaces">
                     <Link to='/publicar' className="public hvr-underline-from-left">
                         Publicar
-                </Link>
+                    </Link>
                     <Link to='/admin' className="cupos hvr-underline-from-left">
                         Cupos
-                </Link>
+                    </Link>
                     <Link to='/historial' className="historial hvr-underline-from-left">
                         Historial
-                </Link>
+                    </Link>
                 </div>
 
                 <div className="enlaces salir" id="salir">
                     <Link to='/' className="historial hvr-pop">
                         LogOut
-                </Link>
+                    </Link>
                 </div>
             </nav>
         </header>

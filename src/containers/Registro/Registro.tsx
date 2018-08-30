@@ -1,6 +1,9 @@
 import * as React from 'react';
+import {Route, Redirect} from "react-router-dom";
 
 import { FormRegis } from '../../components/FormRegis/FormRegis';
+import { Admin } from '../../containers/Admin/Admin';
+import { store } from '../../stores/store';
 
 interface Props {
 }
@@ -28,10 +31,10 @@ export class Registro extends React.Component<Props, State>{
     register = (event: any) => {
         event.preventDefault;
         /*------------------*/
+        store.autenticate(this.state.email, this.state.password);
         localStorage.setItem('email', this.state.email);
         localStorage.setItem('password', this.state.password);
         /*------------------*/
-        
     }
 
     render() {
@@ -39,7 +42,6 @@ export class Registro extends React.Component<Props, State>{
             <FormRegis
                 email={this.state.email}
                 password={this.state.password}
-                register={this.register}
                 handleChangeEmail={this.handleChangeEmail}
                 handleChangePassword={this.handleChangePassword}
             />

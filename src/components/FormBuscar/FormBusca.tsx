@@ -3,12 +3,18 @@ import * as React from 'react';
 import './FormBusca.scss';
 
 interface FormBuscaProps {
-    title: string;
-    text?: string;
-    img?: string;
+    fecha: string;
+    hora: string;
+    origen: string;
+    destino: string;
+    busca: any;
+    handleChangeFecha: any;
+    handleChangeHora: any;
+    handleChangeOrigen: any;
+    handleChangeDestino: any;
 }
 
-export const FormBusca = ({ title, text, img }: FormBuscaProps) => {
+export const FormBusca = (props: FormBuscaProps) => {
     return (
         <section className="bus">
             <section className="buscarPadre">
@@ -16,7 +22,7 @@ export const FormBusca = ({ title, text, img }: FormBuscaProps) => {
                     <h1>Busca tu Ruta</h1>
                 </div>
                 <div className="buscarForm">
-                    <form className="custom-form">
+                    <form className="custom-form" onSubmit={props.busca}>
                         <div className="uno">
                             <div className="form-group">
                                 <input type="fecha" className="form-control"/>

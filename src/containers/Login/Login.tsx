@@ -30,17 +30,17 @@ export class Login extends React.Component<Props, State>{
     }
 
     login = (event: any) => {
+        event.preventDefault;
         const email = localStorage.getItem('email');
         const password = localStorage.getItem('password');
         /*----------*/
         if (this.state.email === email && this.state.password === password) {
-            
+
         }
         this.setState({
-            errorLogged:true
+            errorLogged: true
         })
     }
-
 
     render() {
         return (
