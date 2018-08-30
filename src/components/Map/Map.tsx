@@ -15,6 +15,9 @@ export const Map = (props: MapProps) => {
                 <div className="title">
                     <h1>Ruta</h1>
                 </div>
+                <div className="imagen">
+                    <img src={props.img} />
+                </div>
             </section>
         </section>
     );

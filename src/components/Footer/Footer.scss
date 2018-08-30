@@ -12,16 +12,17 @@ footer {
     justify-content: space-around;
     align-content: center;
     align-items: center;
-
-    img{
-        display: inline-block;
-        height: 20px;;
-    }
 }
 
 .logoG{
     height: 100%;
-    background: #3B5998;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    img{
+        display: inline-block;
+        height: 20px;;
+    }
 }
 
 footer .cont-social {

@@ -1,4 +1,5 @@
 @import '../../../public/assets/css/General.scss';
+
 .hist {
     background: rgba($color: #010d90, $alpha: 0.3);
     width: 100%;
@@ -9,6 +10,7 @@
     justify-content: center;
     align-content: center;
     align-items: center;
+
     .histPadre {
         width: 80%;
         height: 80vh;
@@ -17,6 +19,7 @@
         -webkit-border-radius: 20px;
         border: 0px solid $white;
         background: $white;
+
         .title {
             display: flex;
             flex-direction: row;
@@ -24,6 +27,7 @@
             justify-content: center;
             align-content: center;
             align-items: center;
+
             h1 {
                 font-family: $fuente;
                 padding: 4% 0;
@@ -32,25 +36,197 @@
                 font-size: 2em;
             }
         }
+
         .histForm {
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
-            justify-content: space-around;
+            justify-content: center;
             align-content: center;
             align-items: center;
-            .des {
+            width: 100%;
+
+            .lista {
                 display: flex;
                 flex-direction: column;
                 flex-wrap: nowrap;
                 justify-content: center;
                 align-content: center;
                 align-items: center;
-                background: blue;
                 width: 100%;
-                height: 65vh;
-                border-radius: 0 0 30px 0;
+                height: 55vh;
                 color: $textLight;
+
+                .histoCupo {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    justify-content: center;
+                    align-content: center;
+                    align-items: center;
+                    background: $white;
+                    width: 90%;
+                    height: 10vh;
+                    border-radius: 20px;
+                    -moz-box-shadow: 0px 0px 7px 4px rgba(0, 0, 0, 0.09);
+                    box-shadow: 0px 0px 7px 4px rgba(0, 0, 0, 0.09);
+
+                    .diaHisto {
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: nowrap;
+                        justify-content: center;
+                        align-content: center;
+                        align-items: center;
+                        width: 20%;
+                        height: 100%;
+                        background: $slide;
+                        -moz-border-radius: 20px 0 0 20px;
+                        -webkit-border-radius: 20px 0 0 20px;
+
+                        .diahist {
+                            font-family: $fuenteD;
+                            padding: 4% 0 0 0;
+                            font-weight: 700;
+                            font-size: 1em;
+                            color: $blue;
+                        }
+
+                        .diaselec {
+                            font-family: $fuenteD;
+                            padding: 0 0 5% 0;
+                            font-weight: 700;
+                            font-size: 2em;
+                            color: $blue;
+                        }
+                    }
+
+                    .descHisto {
+                        width: 50%;
+                        height: 100%;
+                        margin-right: 1px;
+                        -moz-box-shadow: 4px 0px 0px 0px rgba(0, 0, 0, 0.08);
+                        box-shadow: 4px 0px 0px 0px rgba(0, 0, 0, 0.08);
+
+                        .nomHist {
+                            display: flex;
+                            flex-direction: column;
+                            flex-wrap: nowrap;
+                            justify-content: center;
+                            align-content: center;
+                            align-items: flex-start;
+                            width: 100%;
+                            height: 50%;
+                            padding: 3% 0 0 6%;
+
+                            .titleNom {
+                                font-family: $fuenteD;
+                                padding: 4% 0 0 0;
+                                font-weight: 700;
+                                font-size: .2em;
+                                color: $lightGray;
+                            }
+
+                            .decNom {
+                                font-family: $fuenteD;
+                                padding: 0 0 4% 0;
+                                font-weight: 700;
+                                font-size: 1em;
+                                color: $darkGray;
+                            }
+                        }
+
+                        .carHisto {
+                            display: flex;
+                            flex-direction: column;
+                            flex-wrap: nowrap;
+                            justify-content: center;
+                            align-content: center;
+                            align-items: flex-start;
+                            width: 100%;
+                            height: 50%;
+                            padding: 3% 0 4% 6%;
+
+                            .titleNom {
+                                font-family: $fuenteD;
+                                padding: 4% 0 0 0;
+                                font-weight: 700;
+                                font-size: .2em;
+                                color: $lightGray;
+                            }
+
+                            .decNom {
+                                font-family: $fuenteD;
+                                padding: 0 0 4% 0;
+                                font-weight: 700;
+                                font-size: 1em;
+                                color: $darkGray;
+                            }
+                        }
+                    }
+
+                    .infoHisto {
+                        width: 30%;
+                        height: 100%;
+                        -moz-border-radius: 0 20px 20px 0;
+                        -webkit-border-radius: 0 20px 20px 0;
+                        .horaHist {
+                            display: flex;
+                            flex-direction: column;
+                            flex-wrap: nowrap;
+                            justify-content: center;
+                            align-content: center;
+                            align-items: flex-start;
+                            width: 100%;
+                            height: 50%;
+                            padding: 3% 0 0 6%;
+
+                            .titleHora {
+                                font-family: $fuenteD;
+                                padding: 4% 0 0 0;
+                                font-weight: 700;
+                                font-size: .2em;
+                                color: $lightGray;
+                            }
+
+                            .decHora {
+                                font-family: $fuenteD;
+                                padding: 0 0 4% 0;
+                                font-weight: 700;
+                                font-size: 1em;
+                                color: $darkGray;
+                            }
+                        }
+
+                        .saliHisto {
+                            display: flex;
+                            flex-direction: column;
+                            flex-wrap: nowrap;
+                            justify-content: center;
+                            align-content: center;
+                            align-items: flex-start;
+                            width: 100%;
+                            height: 50%;
+                            padding: 3% 0 4% 6%;
+
+                            .titleNom {
+                                font-family: $fuenteD;
+                                padding: 4% 0 0 0;
+                                font-weight: 700;
+                                font-size: .2em;
+                                color: $lightGray;
+                            }
+
+                            .decNom {
+                                font-family: $fuenteD;
+                                padding: 0 0 4% 0;
+                                font-weight: 700;
+                                font-size: 1em;
+                                color: $darkGray;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

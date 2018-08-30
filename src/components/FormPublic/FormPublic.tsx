@@ -16,11 +16,18 @@ export const FormPublic = ({ title, text, img }: FormPublicProps) => {
                     <h1>Publica Tu Ruta</h1>
                 </div>
                 <div className="publicForm">
-                    <div className="foto">
+                    <div className="informacion">
+                        <div className="foto">
 
+                        </div>
+                        <div className="des">
+
+                        </div>
                     </div>
-                    <div className="des">
-
+                    <div className="publi">
+                        <div className="submit">
+                            <button className="btn btn-primary btn-block" id="publi" type="submit">Publicar</button>
+                        </div>
                     </div>
                 </div>
             </section>
