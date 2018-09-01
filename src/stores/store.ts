@@ -12,19 +12,28 @@ class Store {
     }];
 
     @observable logedCorreo: string = "";
-    private logedpassword: string = "";
+    @observable logedpassword: string = "";
+    @observable logiar: boolean = false;
+    @observable errorloged: boolean = true;
 
     @action autenticate = (user: string, password: string) => {
 
-    const found = this.usersDb.find((element) => {
-    return element.correo === user && element.password == password;
-    });
-    if(found ==null){
-        console.log('usuario o contraseña incorrecta')
-    } else {
-        console.log('usuario encontrado', found);
-    }
+        const found = this.usersDb.find((element) => {
+            console.log(element)
+            return element.correo === user && element.password == password;
+        });
 
+        console.log("el objeto es:" + found);
+
+        if (typeof found == "undefined") {
+            console.log('usuario o contraseña incorrecta')
+            this.logiar = false;
+        } else {
+            console.log('usuario encontrado', found);
+            this.logiar = true;
+        }
+
+        return this.logiar;
     }
 
 }

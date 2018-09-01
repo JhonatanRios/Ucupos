@@ -1,11 +1,13 @@
 import * as React from 'react';
-import {Route, Redirect} from "react-router-dom";
+import { withRouter } from 'react-router';
 
 import { FormRegis } from '../../components/FormRegis/FormRegis';
-import { Admin } from '../../containers/Admin/Admin';
 import { store } from '../../stores/store';
 
 interface Props {
+    history:any;
+    match:any;
+    location:any;
 }
 
 interface State {
@@ -13,7 +15,7 @@ interface State {
     password: string;
 }
 
-export class Registro extends React.Component<Props, State>{
+class RegistroTemp extends React.Component<Props, State>{
     constructor(props: Props) {
         super(props);
         this.state = {
@@ -35,6 +37,7 @@ export class Registro extends React.Component<Props, State>{
         localStorage.setItem('email', this.state.email);
         localStorage.setItem('password', this.state.password);
         /*------------------*/
+        this.props.history.push('/Admin');
     }
 
     render() {
@@ -48,3 +51,5 @@ export class Registro extends React.Component<Props, State>{
         )
     }
 }
+
+export const Registro = withRouter(RegistroTemp);

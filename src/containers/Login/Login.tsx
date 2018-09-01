@@ -1,8 +1,14 @@
 import * as React from 'react';
+import { withRouter } from 'react-router';
+import { observer } from 'mobx-react';
 
 import { FormLogin } from '../../components/FormLogin/FormLogin';
+import { store } from '../../stores/store';
 
 interface Props {
+    history: any;
+    match: any;
+    location: any;
 }
 
 interface State {
@@ -11,7 +17,7 @@ interface State {
     errorLogged: boolean;
 }
 
-export class Login extends React.Component<Props, State>{
+@observer class LoginTemp extends React.Component<Props, State>{
 
     constructor(props: Props) {
         super(props);
@@ -29,18 +35,19 @@ export class Login extends React.Component<Props, State>{
         this.setState({ password: event.target.value })
     }
 
-    login = (event: any) => {
-        event.preventDefault;
-        const email = localStorage.getItem('email');
-        const password = localStorage.getItem('password');
-        /*----------*/
-        if (this.state.email === email && this.state.password === password) {
+    login = () => {
 
-        }
-        this.setState({
-            errorLogged: true
-        })
+        /*----------*/
+        if (store.autenticate(this.state.email, this.state.password)===true) {
+            console.log ("entra hasta: autenticate")
+            this.props.history.push('/Admin')
+            store.errorloged=true;
+        } else {
+            console.log ("no entra hasta: autenticate")
+            store.errorloged=false;
+        };
     }
+
 
     render() {
         return (
@@ -55,3 +62,5 @@ export class Login extends React.Component<Props, State>{
         )
     }
 }
+
+export const Login = withRouter(LoginTemp);

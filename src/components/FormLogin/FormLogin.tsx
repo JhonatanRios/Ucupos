@@ -1,5 +1,7 @@
 import * as React from 'react';
 import { Link } from "react-router-dom";
+import { observer } from 'mobx-react';
+import { store } from '../../stores/store';
 
 import './FormLogin.scss';
 
@@ -12,7 +14,7 @@ interface FormLoginProps {
     errorLogged: boolean;
 }
 
-export const FormLogin = (props: FormLoginProps) => {
+export const FormLogin = observer((props: FormLoginProps) => {
     return (
         <section className="login">
             <section className="loginPadre">
@@ -34,7 +36,7 @@ export const FormLogin = (props: FormLoginProps) => {
                     <div className="form">
                         <h1 className="titleform">
                             <span>Login</span></h1>
-                        <form className="custom-form" onSubmit={props.login}>
+                        <form className="custom-form" >
                             <div className="form-group">
                                 <input type="email" className="form-control" value={props.email} onChange={props.handleChangeEmail} />
                                 <label className="animated-label">Correo</label>
@@ -45,15 +47,18 @@ export const FormLogin = (props: FormLoginProps) => {
                             </div>
                             <div className="contSubmit">
                                 <div className="submit">
-                                    <button className="btn btn-primary btn-block" id="regis" type="submit">Ingresar</button>
+                                    <button className="btn btn-primary btn-block" id="regis" type="submit" onClick={(ev) => {
+                                        ev.preventDefault();
+                                        props.login();
+                                    }}>Ingresar</button>
                                 </div>
                             </div>
-                        </form>
-                        {!props.errorLogged &&
+                            {store.errorloged===false &&
                             <div>
                                 <h2>Las Credenciales no son Correctas</h2>
                             </div>
                         }
+                        </form>
                     </div>
                 </div>
                 <div className="noCuenta">
@@ -64,4 +69,4 @@ export const FormLogin = (props: FormLoginProps) => {
             </section>
         </section>
     );
-}
+})
