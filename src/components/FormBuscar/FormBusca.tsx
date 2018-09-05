@@ -3,15 +3,7 @@ import * as React from 'react';
 import './FormBusca.scss';
 
 interface FormBuscaProps {
-    fecha: string;
-    hora: string;
-    origen: string;
-    destino: string;
-    busca: any;
-    handleChangeFecha: any;
-    handleChangeHora: any;
-    handleChangeOrigen: any;
-    handleChangeDestino: any;
+    lunes: any;
 }
 
 export const FormBusca = (props: FormBuscaProps) => {
@@ -22,33 +14,81 @@ export const FormBusca = (props: FormBuscaProps) => {
                     <h1>Busca tu Ruta</h1>
                 </div>
                 <div className="buscarForm">
-                    <form className="custom-form" onSubmit={props.busca}>
-                        <div className="uno">
-                            <div className="form-group">
-                                <input type="fecha" className="form-control"/>
-                                <label className="animated-label">Fecha</label>
+                    <div className="dia">
+                        <div className="til"></div>
+                        <div className="boton">
+                            <div className="contSubmit">
+                                <div className="submit">
+                                    <button className="btn btn-primary btn-block" id="regis" type="submit" onClick={(ev) => {
+                                        ev.preventDefault();
+                                        props.lunes();
+                                    }}>Lunes</button>
+                                </div>
                             </div>
-                            <div className="form-group">
-                                <input type="hora" className="form-control"/>
-                                <label className="animated-label">Hora</label>
+                            <div className="contSubmit">
+                                <div className="submit">
+                                    <button className="btn btn-primary btn-block" id="regis" type="submit" onClick={(ev) => {
+                                        ev.preventDefault();
+                                    }}>Martes</button>
+                                </div>
+                            </div>
+                            <div className="contSubmit">
+                                <div className="submit">
+                                    <button className="btn btn-primary btn-block" id="regis" type="submit" onClick={(ev) => {
+                                        ev.preventDefault();
+                                    }}>Miercoles</button>
+                                </div>
+                            </div>
+                            <div className="contSubmit">
+                                <div className="submit">
+                                    <button className="btn btn-primary btn-block" id="regis" type="submit" onClick={(ev) => {
+                                        ev.preventDefault();
+                                    }}>Jueves</button>
+                                </div>
+                            </div>
+                            <div className="contSubmit">
+                                <div className="submit">
+                                    <button className="btn btn-primary btn-block" id="regis" type="submit" onClick={(ev) => {
+                                        ev.preventDefault();
+                                    }}>Viernes</button>
+                                </div>
                             </div>
                         </div>
-                        <div className="dos">
-                            <div className="form-group">
-                                <input type="origen" className="form-control"/>
-                                <label className="animated-label">Origen</label>
-                            </div>
-                            <div className="form-group">
-                                <input type="destino" className="form-control"/>
-                                <label className="animated-label">Destino</label>
+                    </div>
+                    <div className="hora">
+                        <div className="til"></div>
+                        <div className="boton">
+                            <div className="contSubmit">
+                                <div className="submit">
+                                    <button className="btn btn-primary btn-block" id="regis" type="submit" onClick={(ev) => {
+                                        ev.preventDefault();
+                                    }}>7 AM</button>
+                                </div>
                             </div>
                         </div>
-                        <div className="tres">
+                    </div>
+                    <div className="parti">
+                        <div className="til"></div>
+                        <div className="boton">
+                            <div className="contSubmit">
+                                <div className="submit">
+                                    <button className="btn btn-primary btn-block" id="regis" type="submit" onClick={(ev) => {
+                                        ev.preventDefault();
+                                    }}>U.Icesi</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="llega">
+                        <div className="til"></div>
+                        <div className="boton">
                             <div className="submit">
-                                <button className="btn btn-primary btn-block" id="buscar" type="submit">Buscar</button>
+                                <button className="btn btn-primary btn-block" id="regis" type="submit" onClick={(ev) => {
+                                    ev.preventDefault();
+                                }}>U.Icesi</button>
                             </div>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </section>
         </section>
