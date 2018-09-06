@@ -1,16 +1,14 @@
 @import '../../../public/assets/css/General.scss';
-
 .publica {
     background: rgba($color: #010d90, $alpha: 0.3);
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
     align-content: center;
     align-items: center;
-
     .publicPadre {
         width: 80%;
         border-radius: 20px;
@@ -18,7 +16,6 @@
         -webkit-border-radius: 20px;
         border: 0px solid $white;
         background: $white;
-
         .title {
             display: flex;
             flex-direction: row;
@@ -26,7 +23,6 @@
             justify-content: center;
             align-content: center;
             align-items: center;
-
             h1 {
                 font-family: $fuente;
                 padding: 4% 0;
@@ -35,7 +31,6 @@
                 font-size: 2em;
             }
         }
-
         .publicForm {
             display: flex;
             flex-direction: column;
@@ -43,7 +38,6 @@
             justify-content: center;
             align-content: center;
             align-items: center;
-
             .informacion {
                 display: flex;
                 flex-direction: row;
@@ -53,55 +47,101 @@
                 align-items: center;
                 width: 100%;
                 height: 35vh;
-
-                .foto {
-                    display: flex;
-                    flex-direction: column;
-                    flex-wrap: nowrap;
-                    justify-content: center;
-                    align-content: center;
-                    align-items: center;
-                    width: 40%;
-                    height: 65vh;
-                    border-radius: 0 0 0 30px;
-                    color: $textLight;
+                .persoDesc {
+                    width: 35%;
+                    .titleInfo {
+                        font-family: $fuente;
+                        font-weight: 700;
+                        font-size: 18px;
+                        width: 100%;
+                        border-radius: 4px;
+                        margin-top: 4%;
+                        text-align: center;
+                    }
+                    input {
+                        position: relative;
+                        width: 80%;
+                        z-index: 1;
+                        border-radius: 0;
+                        border-width: 0 0 1px;
+                        background: transparent;
+                        border-bottom-color: rgba(0, 0, 0, 0.25);
+                        height: 30px;
+                        margin-bottom: 4%;
+                        font-family: $fuente;
+                        font-size: 16px;
+                        color: $secundaryDark;
+                        font-weight: 700;
+                    }
+                    input::placeholder{
+                        font-size: 14px;
+                        color: $textDark;
+                        font-weight: 300;
+                    }
                 }
+                .infoDesc {
+                    width: 35%;
+                    .titleInfo {
+                        font-family: $fuente;
+                        font-weight: 700;
+                        font-size: 18px;
+                        width: 100%;
+                        border-radius: 4px;
+                        margin-top: 4%;
+                        text-align: center;
+                    }
+                    input {
+                        position: relative;
+                        width: 100%;
+                        z-index: 1;
+                        border-radius: 0;
+                        border-width: 0 0 1px;
+                        background: transparent;
+                        border-bottom-color: rgba(0, 0, 0, 0.25);
+                        height: 30px;
+                        margin-bottom: 4%;
+                        font-family: $fuente;
+                        font-size: 16px;
+                        color: $secundaryDark;
+                        font-weight: 700;
+                        
+                    }
 
-                .des {
-                    display: flex;
-                    flex-direction: column;
-                    flex-wrap: nowrap;
-                    justify-content: center;
-                    align-content: center;
-                    align-items: center;
-                    width: 60%;
-                    height: 65vh;
-                    border-radius: 0 0 30px 0;
-                    color: $textLight;
+                    input::placeholder{
+                        font-size: 14px;
+                        color: $textDark;
+                        font-weight: 300;
+                    }
+                    .cont-sel {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: nowrap;
+                        justify-content: center;
+                        align-content: center;
+                        align-items: center;
+                        .sel {
+                            font-family: $fuente;
+                            font-size: 16px;
+                            border: 1px solid $secundaryDark;
+                        }
+                    }
                 }
             }
-
             .publi {
                 display: flex;
                 justify-content: center;
                 align-content: center;
                 align-items: center;
-                padding-top: 1%;
-
+                padding: 5% 0;
                 .btn-primary {
                     background-color: rgba(0, 0, 0, 0);
                     border-color: $secundaryDark;
-                    padding: 2%;
-                    width: 120px;
+                    padding: 5%;
+                    width: 180px;
                     border-radius: 40px;
                     color: $textDark;
                     margin: 2%;
-                }
-
-                .textLoginWith {
-                    font-family: $fuente;
-                    font-size: 0.8em;
-                    font-weight: 300;
+                    font-size: 20px;
                 }
             }
         }

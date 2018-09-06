@@ -57,12 +57,13 @@ export const Descrip = observer((props: DescripProps) => {
                         </div>
                     </div>
                 ) : (
-                        <div className="informacion">
-                            <div className="mensaje">
-                                <h2>Seleciona un Cupo de la lista</h2>
+                        <div className="descripForm">
+                            <div className="informacion">
+                                <div className="mensaje">
+                                    <h2>Seleciona un Cupo de la lista</h2>
+                                </div>
                             </div>
                         </div>
-
                     )
                 }
             </section>
