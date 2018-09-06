@@ -17,15 +17,15 @@ class Store {
     @observable cuposDb = [
         {
             id: 1,
-            nombre: "Jhonatan Stiven Rios Villa",
-            placa: "DMI-220",
+            nombre: "Jhonatan",
+            placa: "DMI-123",
             partida: "Icesi",
             llegada: "calle36#15-40",
-            puestos: 2,
-            calificacion: 100,
+            puestos: 4,
+            calificacion: 0,
             contacto: 3156366632,
-            viajes: 4,
-            hora: "5:00",
+            viajes: 0,
+            hora: "7:00AM",
             dia: 'lunes',
             mapa: "map1"
         },
@@ -39,7 +39,7 @@ class Store {
             calificacion: 100,
             contacto: 3156366632,
             viajes: 4,
-            hora: "5:00",
+            hora: "5:00PM",
             dia: 'martes',
             mapa: "map1"
         },
@@ -53,7 +53,7 @@ class Store {
             calificacion: 100,
             contacto: 3156366632,
             viajes: 4,
-            hora: "5:00",
+            hora: "7:00PM",
             dia: 'jueves',
             mapa: "map1"
         },
@@ -67,7 +67,7 @@ class Store {
             calificacion: 100,
             contacto: 3156366632,
             viajes: 4,
-            hora: "5:00",
+            hora: "5:00PM",
             dia: 'lunes',
             mapa: "map2"
         },
@@ -81,8 +81,8 @@ class Store {
             calificacion: 100,
             contacto: 3156366632,
             viajes: 4,
-            hora: "5:00",
-            dia: 'martes',
+            hora: "7:00PM",
+            dia: 'viernes',
             mapa: "map2"
         },
         {
@@ -95,7 +95,7 @@ class Store {
             calificacion: 100,
             contacto: 3155894735,
             viajes: 205,
-            hora: "7:00",
+            hora: "7:00AM",
             dia: 'jueves',
             mapa: "map3"
         },
@@ -109,7 +109,7 @@ class Store {
             calificacion: 100,
             contacto: 3155894735,
             viajes: 205,
-            hora: "5:00",
+            hora: "5:00PM",
             dia: 'martes',
             mapa: "map3"
         },
@@ -123,7 +123,7 @@ class Store {
             calificacion: 100,
             contacto: 3155894735,
             viajes: 205,
-            hora: "5:00",
+            hora: "5:00PM",
             dia: 'lunes',
             mapa: "map4"
         },
@@ -137,144 +137,19 @@ class Store {
             calificacion: 100,
             contacto: 3155894735,
             viajes: 205,
-            hora: "5:00",
+            hora: "5:00PM",
             dia: 'martes',
             mapa: "map4"
-        },
-        {
-            id: 1,
-            nombre: "Daniel Pernia",
-            placa: "DMI-220",
-            partida: "Icesi",
-            llegada: "calle36#15-40",
-            puestos: 2,
-            calificacion: 100,
-            contacto: 3156366632,
-            viajes: 4,
-            hora: "5:00",
-            dia: 'lunes',
-            mapa: "map1"
-        },
-        {
-            id: 2,
-            nombre: "Jhonatan Stiven Rios Villa",
-            placa: "DMI-220",
-            partida: "Icesi",
-            llegada: "calle36#15-40",
-            puestos: 2,
-            calificacion: 100,
-            contacto: 3156366632,
-            viajes: 4,
-            hora: "5:00",
-            dia: 'martes',
-            mapa: "map1"
-        },
-        {
-            id: 3,
-            nombre: "Jhonatan Stiven Rios Villa",
-            placa: "DMI-220",
-            partida: "Icesi",
-            llegada: "calle36#15-40",
-            puestos: 2,
-            calificacion: 100,
-            contacto: 3156366632,
-            viajes: 4,
-            hora: "5:00",
-            dia: 'jueves',
-            mapa: "map1"
-        },
-        {
-            id: 4,
-            nombre: "Jhonatan Stiven Rios Villa",
-            placa: "DMI-220",
-            partida: "calle36#15-40",
-            llegada: "Icesi",
-            puestos: 2,
-            calificacion: 100,
-            contacto: 3156366632,
-            viajes: 4,
-            hora: "5:00",
-            dia: 'lunes',
-            mapa: "map2"
-        },
-        {
-            id: 5,
-            nombre: "Jhonatan Stiven Rios Villa",
-            placa: "DMI-220",
-            partida: "calle36#15-40",
-            llegada: "Icesi",
-            puestos: 2,
-            calificacion: 100,
-            contacto: 3156366632,
-            viajes: 4,
-            hora: "5:00",
-            dia: 'martes',
-            mapa: "map2"
-        },
-        {
-            id: 6,
-            nombre: "Ana Lucumi",
-            placa: "AGT-265",
-            partida: "Javeriana",
-            llegada: "calle36#15-40",
-            puestos: 3,
-            calificacion: 100,
-            contacto: 3155894735,
-            viajes: 205,
-            hora: "7:00",
-            dia: 'jueves',
-            mapa: "map3"
-        },
-        {
-            id: 7,
-            nombre: "Ana Lucumi",
-            placa: "AGT-265",
-            partida: "Javeriana",
-            llegada: "calle36#15-40",
-            puestos: 2,
-            calificacion: 100,
-            contacto: 3155894735,
-            viajes: 205,
-            hora: "5:00",
-            dia: 'martes',
-            mapa: "map3"
-        },
-        {
-            id: 8,
-            nombre: "Ana Lucumi",
-            placa: "AGT-265",
-            partida: "calle36#15-40",
-            llegada: "Javeriana",
-            puestos: 2,
-            calificacion: 100,
-            contacto: 3155894735,
-            viajes: 205,
-            hora: "5:00",
-            dia: 'lunes',
-            mapa: "map4"
-        },
-        {
-            id: 9,
-            nombre: "Ana Lucumi",
-            placa: "AGT-265",
-            partida: "calle36#15-40",
-            llegada: "Javeriana",
-            puestos: 2,
-            calificacion: 100,
-            contacto: 3155894735,
-            viajes: 205,
-            hora: "5:00",
-            dia: 'martes',
-            mapa: "map4"
-        },
+        }
     ];
 
     @observable logedCorreo: string = "";
     @observable logedpassword: string = "";
-    @observable logiar: boolean = false;
+    @observable logiar: boolean = true;
     @observable errorloged: boolean = true;
     @observable mostrarMap: boolean = true;
     @observable selecionado: any = null;
+    @observable historia: any = [];
 
     @observable filters: any = {
         dia: null,
@@ -304,10 +179,14 @@ class Store {
         });
     }
 
+    @action histoList(agre: any) {
+        this.historia=agre
+        //this.historia.push(agre)
+    }
+
+
     @action selec(sleccion: any) {
         this.selecionado = sleccion
-        console.log(typeof(this.selecionado.mapa))
-
     }
 
     @action autenticate = (user: string, password: string) => {

@@ -71,7 +71,7 @@ interface FormBuscaProps {
                                 <div className="submit">
                                     <button className="btn btn-primary btn-block" id="regis" type="submit" onClick={(ev) => {
                                         ev.preventDefault();
-                                        store.setfilter("hora", "7:00");
+                                        store.setfilter("hora", "7:00AM");
                                     }}>7 AM</button>
                                 </div>
                             </div>
@@ -79,7 +79,7 @@ interface FormBuscaProps {
                                 <div className="submit">
                                     <button className="btn btn-primary btn-block" id="regis" type="submit" onClick={(ev) => {
                                         ev.preventDefault();
-                                        store.setfilter("hora", "5:00");
+                                        store.setfilter("hora", "5:00PM");
                                     }}>5 PM</button>
                                 </div>
                             </div>

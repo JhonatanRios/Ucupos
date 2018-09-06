@@ -52,18 +52,20 @@ export const Descrip = observer((props: DescripProps) => {
                         </div>
                         <div className="aceptar">
                             <div className="submit">
-                                <button className="btn btn-primary btn-block" id="acep" type="submit">Aceptar</button>
+                                <button className="btn btn-primary btn-block" id="acep" type="submit" onClick={(ev) => {
+                                    ev.preventDefault();
+                                    store.histoList(store.selecionado);
+                                }}>Aceptar</button>
                             </div>
                         </div>
                     </div>
                 ) : (
-                        <div className="descripForm">
-                            <div className="informacion">
-                                <div className="mensaje">
-                                    <h2>Seleciona un Cupo de la lista</h2>
-                                </div>
+                        <div className="informacion">
+                            <div className="mensaje">
+                                <h2>Seleciona un Cupo de la lista</h2>
                             </div>
                         </div>
+
                     )
                 }
             </section>

@@ -2,12 +2,11 @@ import * as React from 'react';
 import { withRouter } from 'react-router';
 
 import { FormRegis } from '../../components/FormRegis/FormRegis';
-import { store } from '../../stores/store';
 
 interface Props {
-    history:any;
-    match:any;
-    location:any;
+    history: any;
+    match: any;
+    location: any;
 }
 
 interface State {
@@ -31,13 +30,7 @@ class RegistroTemp extends React.Component<Props, State>{
         this.setState({ password: event.target.value })
     }
     register = (event: any) => {
-        event.preventDefault;
-        /*------------------*/
-        store.autenticate(this.state.email, this.state.password);
-        localStorage.setItem('email', this.state.email);
-        localStorage.setItem('password', this.state.password);
-        /*------------------*/
-        this.props.history.push('/Admin');
+        this.props.history.push('/Admin')
     }
 
     render() {

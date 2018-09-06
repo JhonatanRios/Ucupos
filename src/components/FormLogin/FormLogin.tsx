@@ -23,9 +23,6 @@ export const FormLogin = observer((props: FormLoginProps) => {
                 </div>
                 <div className="loginForm">
                     <div className="intro">
-                        <div className="logoCont">
-                            <img src="" alt="Logo Cupos ICESI" className="logo" />
-                        </div>
                         <h1>Te damos la bienvenida</h1>
                         <ul>
                             <li>Comparte tu vehiculo desde y hacia la universidad</li>
