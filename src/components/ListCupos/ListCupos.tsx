@@ -1,20 +1,19 @@
 import * as React from 'react';
+import { observer } from 'mobx-react';
 
 import './ListCupos.scss';
 import { store } from '../../stores/store';
 
 interface ListCuposProps {
-    conductor: any;
-    newArray: any;
+
 }
 
-export class ListCupos extends React.Component<ListCuposProps, {}> {
+@observer export class ListCupos extends React.Component<ListCuposProps, {}> {
     constructor(props: ListCuposProps) {
         super(props);
     }
 
     render() {
-        console.log(this.props.newArray);
         return (
             <section className="cupo">
                 <section className="cupoPadre">
@@ -23,9 +22,11 @@ export class ListCupos extends React.Component<ListCuposProps, {}> {
                     </div>
                     <div className="cupoForm">
                         <div className="lista">
-                            {this.props.newArray.map((cupos: any) => {
-                                return
-                                <div className="cupos">
+                            {store.listaFiltrada.map((cupos: any) => {
+                                return <div className="cupos" key={cupos.id} onClick={() => {
+                                    store.selec(cupos);
+                                }
+                                }>
                                     <div className="datos">
                                         <div className="user">
                                             <div className="nomUser">

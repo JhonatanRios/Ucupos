@@ -6,14 +6,15 @@ interface HeaderProps {
     title: string;
     text?: string;
     img?: string;
+    logout: any;
 }
 
-export const Header = ({ title, text, img }: HeaderProps) => {
+export const Header = (props: HeaderProps) => {
     return (
         <header className="header">
             <nav className="menu">
                 <div className="logo">
-                    <img src={img} alt="" />
+                    <img src={props.img} alt="" />
                     <a href="#" className="btn-menu" id="btn-menu">
                         <i className="icono fa fa-bars" aria-hidden="true">
                         </i>
@@ -31,7 +32,10 @@ export const Header = ({ title, text, img }: HeaderProps) => {
                     </Link>
                 </div>
 
-                <div className="enlaces salir" id="salir">
+                <div className="enlaces salir" id="salir" onClick={(ev) => {
+                    ev.preventDefault();
+                    props.logout();
+                }}>
                     <Link to='/' className="historial hvr-pop">
                         LogOut
                     </Link>

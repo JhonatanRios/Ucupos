@@ -54,6 +54,17 @@
                 width: 100%;
                 height: 35vh;
 
+                .mensaje {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 35vh;
+                }
+
                 .persoDesc {
                     display: flex;
                     flex-direction: column;

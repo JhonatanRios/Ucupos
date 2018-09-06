@@ -20,85 +20,253 @@ class Store {
             nombre: "Jhonatan Stiven Rios Villa",
             placa: "DMI-220",
             partida: "Icesi",
-            llegada: "calle 36 # 15 - 40",
-            puestos: 3,
-            calificacion: 4,
+            llegada: "calle36#15-40",
+            puestos: 2,
+            calificacion: 100,
             contacto: 3156366632,
             viajes: 4,
-            hora: "3:00 PM",
+            hora: "5:00",
             dia: 'lunes',
-            mapa: "./assets/img/map.png"
+            mapa: "map1"
         },
         {
             id: 2,
             nombre: "Jhonatan Stiven Rios Villa",
             placa: "DMI-220",
-            partida: "calle 36 # 15 - 40",
-            llegada: "Icesi",
-            puestos: 3,
-            calificacion: 4,
+            partida: "Icesi",
+            llegada: "calle36#15-40",
+            puestos: 2,
+            calificacion: 100,
             contacto: 3156366632,
             viajes: 4,
-            hora: "7:00 AM",
+            hora: "5:00",
             dia: 'martes',
-            mapa: "./assets/img/map.png"
+            mapa: "map1"
         },
         {
             id: 3,
-            nombre: "Daniel Burbano",
-            placa: "DAY-460",
-            partida: "Javeriana",
-            llegada: "calle 36 # 15 - 40",
+            nombre: "Jhonatan Stiven Rios Villa",
+            placa: "DMI-220",
+            partida: "Icesi",
+            llegada: "calle36#15-40",
             puestos: 2,
-            calificacion: 5,
+            calificacion: 100,
             contacto: 3156366632,
-            viajes: 10,
-            hora: "3:00 PM",
-            dia: 'lunes',
-            mapa: "./assets/img/map.png"
+            viajes: 4,
+            hora: "5:00",
+            dia: 'jueves',
+            mapa: "map1"
         },
         {
             id: 4,
-            nombre: "Daniel Burbano",
-            placa: "DAY-460",
-            partida: "Javeriana",
-            llegada: "calle 36 # 15 - 40",
+            nombre: "Jhonatan Stiven Rios Villa",
+            placa: "DMI-220",
+            partida: "calle36#15-40",
+            llegada: "Icesi",
             puestos: 2,
-            calificacion: 5,
+            calificacion: 100,
             contacto: 3156366632,
-            viajes: 10,
-            hora: "3:00 PM",
-            dia: 'martes',
-            mapa: "./assets/img/map.png"
+            viajes: 4,
+            hora: "5:00",
+            dia: 'lunes',
+            mapa: "map2"
         },
         {
             id: 5,
-            nombre: "Daniel Burbano",
-            placa: "DAY-460",
-            partida: "Javeriana",
-            llegada: "calle 36 # 15 - 40",
+            nombre: "Jhonatan Stiven Rios Villa",
+            placa: "DMI-220",
+            partida: "calle36#15-40",
+            llegada: "Icesi",
             puestos: 2,
-            calificacion: 5,
+            calificacion: 100,
             contacto: 3156366632,
-            viajes: 10,
-            hora: "3:00 PM",
-            dia: 'miercoles',
-            mapa: "./assets/img/map.png"
+            viajes: 4,
+            hora: "5:00",
+            dia: 'martes',
+            mapa: "map2"
         },
         {
             id: 6,
-            nombre: "Jhonatan Stiven Rios Villa",
-            placa: "DMI-220",
-            partida: "calle 36 # 15 - 40",
+            nombre: "Ana Lucumi",
+            placa: "AGT-265",
+            partida: "Javeriana",
+            llegada: "calle36#15-40",
+            puestos: 3,
+            calificacion: 100,
+            contacto: 3155894735,
+            viajes: 205,
+            hora: "7:00",
+            dia: 'jueves',
+            mapa: "map3"
+        },
+        {
+            id: 7,
+            nombre: "Ana Lucumi",
+            placa: "AGT-265",
+            partida: "Javeriana",
+            llegada: "calle36#15-40",
+            puestos: 2,
+            calificacion: 100,
+            contacto: 3155894735,
+            viajes: 205,
+            hora: "5:00",
+            dia: 'martes',
+            mapa: "map3"
+        },
+        {
+            id: 8,
+            nombre: "Ana Lucumi",
+            placa: "AGT-265",
+            partida: "calle36#15-40",
             llegada: "Javeriana",
             puestos: 2,
-            calificacion: 5,
-            contacto: 3156366632,
-            viajes: 10,
-            hora: "7:00 AM",
+            calificacion: 100,
+            contacto: 3155894735,
+            viajes: 205,
+            hora: "5:00",
             dia: 'lunes',
-            mapa: "./assets/img/map.png"
-        }
+            mapa: "map4"
+        },
+        {
+            id: 9,
+            nombre: "Ana Lucumi",
+            placa: "AGT-265",
+            partida: "calle36#15-40",
+            llegada: "Javeriana",
+            puestos: 2,
+            calificacion: 100,
+            contacto: 3155894735,
+            viajes: 205,
+            hora: "5:00",
+            dia: 'martes',
+            mapa: "map4"
+        },
+        {
+            id: 1,
+            nombre: "Daniel Pernia",
+            placa: "DMI-220",
+            partida: "Icesi",
+            llegada: "calle36#15-40",
+            puestos: 2,
+            calificacion: 100,
+            contacto: 3156366632,
+            viajes: 4,
+            hora: "5:00",
+            dia: 'lunes',
+            mapa: "map1"
+        },
+        {
+            id: 2,
+            nombre: "Jhonatan Stiven Rios Villa",
+            placa: "DMI-220",
+            partida: "Icesi",
+            llegada: "calle36#15-40",
+            puestos: 2,
+            calificacion: 100,
+            contacto: 3156366632,
+            viajes: 4,
+            hora: "5:00",
+            dia: 'martes',
+            mapa: "map1"
+        },
+        {
+            id: 3,
+            nombre: "Jhonatan Stiven Rios Villa",
+            placa: "DMI-220",
+            partida: "Icesi",
+            llegada: "calle36#15-40",
+            puestos: 2,
+            calificacion: 100,
+            contacto: 3156366632,
+            viajes: 4,
+            hora: "5:00",
+            dia: 'jueves',
+            mapa: "map1"
+        },
+        {
+            id: 4,
+            nombre: "Jhonatan Stiven Rios Villa",
+            placa: "DMI-220",
+            partida: "calle36#15-40",
+            llegada: "Icesi",
+            puestos: 2,
+            calificacion: 100,
+            contacto: 3156366632,
+            viajes: 4,
+            hora: "5:00",
+            dia: 'lunes',
+            mapa: "map2"
+        },
+        {
+            id: 5,
+            nombre: "Jhonatan Stiven Rios Villa",
+            placa: "DMI-220",
+            partida: "calle36#15-40",
+            llegada: "Icesi",
+            puestos: 2,
+            calificacion: 100,
+            contacto: 3156366632,
+            viajes: 4,
+            hora: "5:00",
+            dia: 'martes',
+            mapa: "map2"
+        },
+        {
+            id: 6,
+            nombre: "Ana Lucumi",
+            placa: "AGT-265",
+            partida: "Javeriana",
+            llegada: "calle36#15-40",
+            puestos: 3,
+            calificacion: 100,
+            contacto: 3155894735,
+            viajes: 205,
+            hora: "7:00",
+            dia: 'jueves',
+            mapa: "map3"
+        },
+        {
+            id: 7,
+            nombre: "Ana Lucumi",
+            placa: "AGT-265",
+            partida: "Javeriana",
+            llegada: "calle36#15-40",
+            puestos: 2,
+            calificacion: 100,
+            contacto: 3155894735,
+            viajes: 205,
+            hora: "5:00",
+            dia: 'martes',
+            mapa: "map3"
+        },
+        {
+            id: 8,
+            nombre: "Ana Lucumi",
+            placa: "AGT-265",
+            partida: "calle36#15-40",
+            llegada: "Javeriana",
+            puestos: 2,
+            calificacion: 100,
+            contacto: 3155894735,
+            viajes: 205,
+            hora: "5:00",
+            dia: 'lunes',
+            mapa: "map4"
+        },
+        {
+            id: 9,
+            nombre: "Ana Lucumi",
+            placa: "AGT-265",
+            partida: "calle36#15-40",
+            llegada: "Javeriana",
+            puestos: 2,
+            calificacion: 100,
+            contacto: 3155894735,
+            viajes: 205,
+            hora: "5:00",
+            dia: 'martes',
+            mapa: "map4"
+        },
     ];
 
     @observable logedCorreo: string = "";
@@ -106,17 +274,45 @@ class Store {
     @observable logiar: boolean = false;
     @observable errorloged: boolean = true;
     @observable mostrarMap: boolean = true;
+    @observable selecionado: any = null;
 
-    @computed get lunes(): any {
-        return this.cuposDb.filter(function (el) {
-            return el.dia === 'lunes'
+    @observable filters: any = {
+        dia: null,
+        hora: null,
+        partida: null,
+        llegada: null,
+    };
+
+    @action setfilter(filter: string, value: string) {
+        this.filters[filter] = value;
+    }
+
+    @computed get listaFiltrada(): any {
+        return this.cuposDb.filter((el) => {
+            if (this.filters.partida !== null) {
+                return el.partida === this.filters.partida
+            }
+            if (this.filters.llegada !== null) {
+                return el.llegada === this.filters.llegada
+            }
+            if (this.filters.hora !== null) {
+                return el.hora === this.filters.hora
+            }
+            if (this.filters.dia !== null) {
+                return el.dia === this.filters.dia
+            }
         });
+    }
+
+    @action selec(sleccion: any) {
+        this.selecionado = sleccion
+        console.log(typeof(this.selecionado.mapa))
+
     }
 
     @action autenticate = (user: string, password: string) => {
 
         const found = this.usersDb.find((element) => {
-
             return element.correo === user && element.password == password;
         });
 
@@ -130,25 +326,6 @@ class Store {
 
         return this.logiar;
     }
-
-    /*@action buscador = (id:number) => {
-
-        const found = this.cuposDb.find((element) => {
-            return element.id === id;
-        });
-
-        console.log("el objeto es:" + found);
-
-        if (typeof found == "undefined") {
-            console.log('Busqueda Incorrecta')
-            this.mostrarMap = false;
-        } else {
-            console.log('Su Busqueda Es :', found);
-            this.mostrarMap = true;
-        }
-
-        return this.mostrarMap;
-    }*/
 
 }
 export const store = new Store();
