@@ -145,7 +145,7 @@ class Store {
 
     @observable logedCorreo: string = "";
     @observable logedpassword: string = "";
-    @observable logiar: boolean = true;
+    @observable logiar: boolean = false;
     @observable errorloged: boolean = true;
     @observable mostrarMap: boolean = true;
     @observable selecionado: any = null;
